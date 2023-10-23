@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background: #f6f5f7;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+
+.btn {
+    padding: 0.7rem 3rem;
+    border-radius: 2rem;
+    background: #FF416C;
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    color: white;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.sign_in {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 52rem;
+    font-size: 1.3rem;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    -webkit-box-shadow: -4px -1px 19px 4px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: -4px -1px 19px 4px rgba(0, 0, 0, 0.56);
+    box-shadow: -4px -1px 19px 4px rgba(0, 0, 0, 0.56);
+
+}
+
+.sign_up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 52rem;
+    font-size: 1.3rem;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(117, 117, 117);
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    -webkit-box-shadow: -4px -1px 19px 4px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: -4px -1px 19px 4px rgba(0, 0, 0, 0.56);
+    box-shadow: -4px -1px 19px 4px rgba(0, 0, 0, 0.56);
+
+}
+
+.sign_in_left {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    gap: 1.5rem;
+    padding: 3rem;
+    margin-right: -4.5rem;
+    margin-left: -4.5rem;
+    width: 100%;
+}
+
+.sign_up_right {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    gap: 1.5rem;
+    padding: 3rem;
+    margin-right: -4.5rem;
+    margin-left: -4.5rem;
+    width: 100%;
+}
+
+
+.sign_in_left h1 {
+    font-weight: 800;
+}
+
+.sign_up_right h1 {
+    font-weight: 800;
+}
+
+.sign_in_left a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.sign_up_right a {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+}
+
+.sign_in_left .form_elements {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+    transition: all 300ms ease;
+    margin-top: -0.8rem;
+}
+
+.sign_up_right .form_elements {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+    transition: all 300ms ease;
+    margin-top: -0.8rem;
+}
+
+.sign_in_left .socials {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.sign_up_right .socials {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.sign_in_left .socials i {
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 50%;
+    padding: 0.7rem;
+}
+
+.sign_up_right .socials i {
+    font-size: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 50%;
+    padding: 0.7rem;
+}
+
+.sign_in_left .socials i:hover {
+    background-color: black;
+    color: white;
+    background: #FF416C;
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.sign_up_right .socials i:hover {
+    background-color: black;
+    color: white;
+    background: #FF416C;
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+.sign_in_left p {
+    font-size: 0.8rem;
+}
+
+.sign_up_right p {
+    font-size: 0.8rem;
+}
+
+.form_elements input {
+    width: 16rem;
+    height: 2.5rem;
+    background-color: #ece2e2;
+    padding: 1rem 0 1rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.form_elements input:focus {
+    border: 2px solid black;
+}
+
+.sign_in_right {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    gap: 3rem;
+    padding: 9rem 5.7rem 9rem 5.7rem;
+    background: #FF416C;
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+
+}
+
+.sign_up_left {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    gap: 3rem;
+    padding: 9rem 5.7rem 9rem 5.7rem;
+    background: #FF416C;
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+    background: linear-gradient(to right, #FF4B2B, #FF416C);
+
+}
+
+.sign_in_right h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.sign_up_left h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.sign_in_right p {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.sign_in_right a {
+    text-decoration: none;
+    color: white;
+}
+
+.sign_up_left p {
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.sign_up_left a {
+    text-decoration: none;
+    color: white;
+}
+
+.sign_in_right.active {
+    transform: translateX(-26rem);
+}
+
+.sign_in_left.active {
+    transform: translateX(26rem);
+}
+
+
+@media screen and (max-width: 992px) {
+    .sign_in {
+        grid-template-columns: 1fr;
+        width: 100vw;
+        overflow: visible;
+
+    }
+
+    .sign_up {
+        grid-template-columns: 1fr;
+        width: 100vw;
+        overflow: visible;
+
+    }
+
+    .sign_in_left {
+        grid-row: 2/3;
+    }
+
+    .sign_in_right {
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+
+    }
+
+    .sign_up_left {
+        padding-top: 2.5rem;
+        padding-bottom: 1.5rem;
+
+    }
+
+    .sign_in_right h1 {
+        font-size: 1rem;
+    }
+
+    .sign_up_left h1 {
+        font-size: 1rem;
+    }
+
+    .sign_in_right p {
+        font-size: 0.7rem;
+        margin-bottom: -1rem;
+    }
+
+    .sign_up_left p {
+        font-size: 0.7rem;
+        margin-bottom: -1rem;
+    }
+
+    .btn {
+        padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+}
